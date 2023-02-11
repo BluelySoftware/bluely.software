@@ -131,7 +131,7 @@ body::-webkit-scrollbar {
   margin: 10px !important;
 }
 
-.divhor.dark {
+.divhordark {
   width: 60%;
   height: 4px;
   background-color: black !important;
