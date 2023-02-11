@@ -157,3 +157,10 @@ body::-webkit-scrollbar {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.centertxt {
+  position: absolute !important;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
