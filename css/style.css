@@ -131,6 +131,14 @@ body::-webkit-scrollbar {
   margin: 10px !important;
 }
 
+.divhor.dark {
+  width: 60%;
+  height: 4px;
+  background-color: black !important;
+  border-radius: 2rem;
+  margin: 10px !important;
+}
+
 .navicons {
   position: fixed;
   top: 0;
@@ -165,14 +173,6 @@ body::-webkit-scrollbar {
   transform: translateX(-50%);
   text-align: center;
   justify-content: center;
-  color: white;
+  color: black;
   width: 75%;
-}
-
-.centerdivhor {
-  width: 60%;
-  height: 4px;
-  background-color: white;
-  border-radius: 2rem;
-  margin: 10px !important;
 }
