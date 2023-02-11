@@ -160,7 +160,11 @@ body::-webkit-scrollbar {
 
 .centertxt {
   position: absolute !important;
-  top: 10vh;
+  top: calc(10vh + 20px);
   left: 50%;
   transform: translateX(-50%);
+  text-align: center;
+  justify-content: center;
+  color: white;
+  width: 75%;
 }
