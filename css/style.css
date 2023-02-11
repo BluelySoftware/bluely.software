@@ -1,0 +1,159 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  visibility: hidden;
+}
+
+.waves {
+  display: grid;
+}
+
+.waves > * {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.showcase {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+}
+
+.showcase .text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: absolute !important;
+  top: calc(10vh + 15%);
+  left: 0;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.showcase .text *:not(.divhor) {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+
+.showcase .product {
+  display: flex;
+  text-align: right;
+  justify-content: right;
+  margin-right: 20px;
+  margin-top: 7vh;
+  align-items: center;
+  vertical-align: middle;
+  flex: 0 1 auto;
+  height: 80vh;
+}
+
+.showcase .product img {
+  transform: translateX(-5vw) skewX(-10deg) rotateY(-10deg);
+  border: 10px solid blue;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 10px 52px 0px rgba(19,142,237,1);
+  -moz-box-shadow: 0px 10px 52px 0px rgba(19,142,237,1);
+  box-shadow: 0px 10px 52px 0px rgba(19,142,237,1);
+}
+
+#nav {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  line-break: normal;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(10vh + 10px);
+  text-align: left;
+  justify-content: left;
+  align-items: flex-start;
+  flex: 0 1 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(10vh + 10px);
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 5px 65px 0px rgba(200,200,200,0.75);
+  -moz-box-shadow: 0px 5px 65px 0px rgba(200,200,200,0.75);
+  box-shadow: 0px 5px 65px 0px rgba(200,200,200,0.75);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+#nav * {
+  display: inline-flex;
+  word-break: keep-all;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  flex: 0 1 auto;
+  max-height: 10vh !important;
+}
+
+.navitem {
+  box-sizing: border-box;
+  padding: 5px;
+  white-space: nowrap;
+  display: inline-flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  margin: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.divert {
+  height: 70%;
+  width: 3px;
+  background-color: black;
+  border-radius: 2rem;
+  margin: 10px;
+}
+
+.divhor {
+  width: 60%;
+  height: 4px;
+  background-color: white;
+  border-radius: 2rem;
+  margin: 10px !important;
+}
+
+.navicons {
+  position: fixed;
+  top: 0;
+  right: 0;
+  flex: 1 !important;
+  float: right;
+  display: inline-flex;
+  flex-direction: row;
+  text-align: right;
+  justify-content: right;
+  align-items: center;
+  vertical-align: middle;
+  height: calc(10vh + 10px) !important;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navicons * {
+  text-decoration: none;
+  color: black;
+  font-size: 4vh;
+  vertical-align: middle;
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+}
