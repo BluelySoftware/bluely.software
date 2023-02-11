@@ -52,3 +52,87 @@ body::-webkit-scrollbar {
   border-radius: 50%;
   scale: 0.8;
 }
+
+a {
+  text-decoration: none;
+  color: #0084ff;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin: 0 1rem;
+  user-select: none;
+  flex-wrap: wrap;
+}
+
+.button {
+  background: var(--theme);
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: var(--text-secondary);
+  border: 0;
+}
+#gs {
+  cursor: pointer;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+.zoom {
+  -webkit-animation: scale-down-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-down-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.zoom:hover {
+  text-decoration: none;
+  -webkit-animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@-webkit-keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
