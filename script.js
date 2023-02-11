@@ -1,9 +1,9 @@
 var dims = {
   entrance : entrance.getBoundingClientRect().height.toString() + 'px',
-  dox      : barcodeDox.getBoundingClientRect().height.toString() + 'px'
+  info      : otherInfo.getBoundingClientRect().height.toString() + 'px'
 }
 
-barcodeDox.style = 'min-height: 0px; max-height: 0px;'
+otherInfo.style = 'min-height: 0px; max-height: 0px;'
 
 portal.onmousedown = () => {
   TweenMax.to(portal, {
@@ -38,14 +38,14 @@ portal.onmouseup = () => {
       position: 'absolute',
       y: '-100vh',
       ease: Expo.easeOut
-    }).to(barcodeDox, {
-      maxHeight: dims.dox,
-      minHeight: dims.dox,
+    }).to(otherInfo, {
+      maxHeight: dims.info,
+      minHeight: dims.info,
       ease: Expo.easeOut
     })
   } else {
     var shit = new TimelineMax();
-    shit.to(barcodeDox, {
+    shit.to(otherInfo, {
       maxHeight: '0px',
       minHeight: '0px',
       ease: Expo.easeOut
