@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
   visibility: hidden;
 }
 
-#barcodeDox {
+#otherInfo {
   overflow: hidden;
   display: flex;
   flex-direction: column;
