@@ -1,5 +1,6 @@
 body {
   font-family: Montserrat, sans-serif;
+  font-weight: 500;
 }
 
 body::-webkit-scrollbar {
@@ -28,7 +29,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   color: white;
   position: absolute !important;
-  top: calc(10vh + 15%);
+  top: calc(10vh + 150px);
   left: 0;
   width: 50%;
   text-align: center;
@@ -42,26 +43,23 @@ body::-webkit-scrollbar {
   padding: 0px !important;
 }
 
-
-.showcase .product {
-  display: flex;
-  text-align: right;
-  justify-content: right;
-  margin-right: 20px;
+#hotimg {
+  position: absolute;
+  top: calc(10vh);
+  right: 0;
   margin-top: 7vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-right: 20px;
+  width: 35vw;
+  height: auto;
+  border-radius: 1rem;
   align-items: center;
   vertical-align: middle;
-  flex: 0 1 auto;
-  height: 80vh;
-}
-
-.showcase .product img {
-  transform: translateX(-5vw) skewX(-10deg) rotateY(-10deg);
-  border: 10px solid blue;
-  border-radius: 1rem;
-  -webkit-box-shadow: 0px 10px 52px 0px rgba(19,142,237,1);
-  -moz-box-shadow: 0px 10px 52px 0px rgba(19,142,237,1);
-  box-shadow: 0px 10px 52px 0px rgba(19,142,237,1);
+  -webkit-box-shadow: 0px 10px 76px 0px rgba(0,21,161,1);
+  -moz-box-shadow: 0px 10px 76px 0px rgba(0,21,161,1);
+  box-shadow: 0px 10px 76px 0px rgba(0,21,161,1);
 }
 
 #nav {
@@ -131,10 +129,10 @@ body::-webkit-scrollbar {
   margin: 10px !important;
 }
 
-.divhordark {
+.divhor.dark {
   width: 60%;
   height: 4px;
-  background-color: black !important;
+  background-color: black;
   border-radius: 2rem;
   margin: 10px !important;
 }
@@ -166,13 +164,55 @@ body::-webkit-scrollbar {
   margin-right: 5px;
 }
 
-.centertxt {
-  position: absolute !important;
-  top: calc(10vh + 20px);
-  left: 50%;
-  transform: translateX(-50%);
+.flitem {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 auto;
+  width: 100%;
+}
+
+.flitem .first {
+  display: flex;
+  width: 40vw;
+  align-items: center;
   text-align: center;
   justify-content: center;
-  color: black;
-  width: 75%;
+}
+
+.flitem .last {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.flitem .last * {
+  margin: 0px;
+  padding: 0px;
+}
+
+.griddo {
+  width: 40vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.griddo > * {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0px;
+  padding: 0px;
+  gap: 0px;
+  color: white;
+  font-size: 50px;
+  width: 30vw;
 }
